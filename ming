@@ -1,0 +1,21 @@
+package sum;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int N = 0;
+        Scanner sc = new Scanner(System.in);
+        while (N < 10) {
+            System.out.println("Nhap N (N >= 10):");
+            N = sc.nextInt();
+        }
+        int NN = Integer.parseInt( Integer.toString(N) + Integer.toString(N) );
+        int S = 0;
+        
+        for (int i = 1; i <= N; i++) {
+            S += Integer.parseInt( Integer.toString(i) + Integer.toString(i) );
+        }
+        System.out.println("11 + 22 + 33 + ... + " + NN + " = " + S);
+    }
+}
